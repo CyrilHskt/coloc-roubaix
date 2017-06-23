@@ -95,11 +95,15 @@ a:hover {
 }
 
 section {
-  padding: 90px 0;
+  padding: 20px 0;
 }
 
+/*#services { padding correction for the first section
+  padding: 135px 0;
+}*/
+
 .heading {
-  padding-bottom:90px;
+  padding-bottom:10px;
 }
 
 .preloader {
@@ -281,6 +285,11 @@ section {
 /*************************
 ********Service CSS*******
 **************************/
+.visite {
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
 .service-icon {
   border-radius: 4px;
@@ -413,9 +422,15 @@ section {
   transition: all 1s ease-in-out;
 }
 
+.overlay .folio-info strong {
+  color: #028FCC;
+}
+
 .overlay .folio-info h3 {
   margin-top: 0;
+  font-size: 15px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .folio-overview a {
@@ -443,6 +458,7 @@ section {
 .folio-image, .folio-overview .folio-expand {
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
+  background-image: cover;
 }
 
 #portfolio .folio-item:hover .folio-image {
@@ -452,6 +468,7 @@ section {
 
 .folio-image img {
   width: 100%;
+  border: 3px solid #fff;
 }
 
 #portfolio .folio-item:hover .overlay {
@@ -469,8 +486,9 @@ section {
   opacity: 1;  
   margin-bottom:0;
   margin-top:0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
 
 #single-portfolio {
   padding: 90px 0;
@@ -547,6 +565,7 @@ section {
   text-align: center;
   color: #333;
   font-size: 14px;
+
 }
 
 .team-member:hover .social-icons ul li a.facebook {
@@ -555,14 +574,9 @@ section {
 .team-member:hover .social-icons ul li a.twitter {
   background-color: #2ac6f7;
 }
-.team-member:hover .social-icons ul li a.dribbble {
-  background-color: #ff5b92;
-}
+
 .team-member:hover .social-icons ul li a.linkedin {
   background-color: #036dc0;
-}
-.team-member:hover .social-icons ul li a.rss {
-  background-color: #ff6b00;
 }
 
 #team .img-responsive {
@@ -630,8 +644,15 @@ section {
 }
 
 .price span {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 14px;
+}
+
+.price p {
+  font-size: 11px;
+  line-height: 11px;
+  font-style: italic;
+  padding-top: 5px;
 }
 
 .single-table ul {
@@ -657,197 +678,6 @@ section {
 }
 
 /*************************
-********Twitter CSS*******
-**************************/
-#twitter {
-  background-image: url(../images/twitter-bg.jpg);
-}
-
-#twitter > div {
-  text-align: center;
-  position: relative;
-}
-
-#twitter-carousel {
-  position: relative;
-  z-index: 15
-}
-
-.twitter-icon {
-  position: relative;
-  z-index: 15;
-  color: #fff;
-}
-
-.twitter-icon .fa-twitter {
-  font-size: 24px;
-  height: 64px;
-  width: 64px;
-  line-height: 65px;
-  border-radius: 50%; 
-  position: relative;
-}
-
-.twitter-icon .fa-twitter:after {
-  position: absolute;
-  content: "";
-  border-width: 8px;
-  border-style: solid;
-  left: 24px;
-  bottom: -14px;
-}
-
-#twitter-carousel .item {
-  padding: 0 55px;
-}
-
-#twitter-carousel .item a {
-  color: #fff;
-}
-
-.twitter-icon h4 {
-  text-transform: uppercase;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  color: #fff;
-}
-
-.twitter-left-control, 
-.twitter-right-control {
-  position: absolute;
-  top: 50%;
-  color: #fff;
-  border: 1px solid #fafafa;
-  height:34px;
-  width: 34px;
-  line-height: 31px;
-  margin-top: -17px;
-  font-size: 18px;
-  border-radius: 50%;
-  z-index: 15
-}
-
-.twitter-left-control {
-  left: 80px;
-} 
-
-.twitter-right-control {
-  right: 80px
-}
-
-.twitter-left-control:hover, .twitter-right-control:hover {
-  color: #fff;
-}
-
-
-/*************************
-**********Blog CSS********
-**************************/
-
-.post-thumb {
-  position: relative;
-}
-
-.post-icon {
-  position: absolute;
-  top:10px;
-  right:10px;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  border-radius:4px;
-  text-align: center;
-  color: #fff;
-  font-size: 12px;
-}
-
-.post-meta {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: #fff;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.post-meta span {
-  margin-right: 16px;
-}
-
-#post-carousel .carousel-indicators {
-  bottom: 3px;
-  left: 90%;
-}
-
-.blog-left-control, .blog-right-control {
-  position: absolute;
-  top: 45%;
-  width: 30px;
-  text-align: center;
-  color: rgba(255,255,255,.7);
-  font-size: 36px;
-}
-
-.blog-left-control {
-  left: 0;
-}
-
-.blog-right-control {
-  right: 0;
-}
-
-.blog-left-control:hover, .blog-right-control:hover {
-  color: #fff;  
-}
-
-.entry-header h3 a {
-  line-height: 30px;
-}
-
-.entry-header .date, 
-.entry-header .cetagory {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.entry-header .date:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom:-22px;
-  width: 20px;
-  height: 3px;
-}
-
-.entry-content {
-  font-size: 14px;
-}
-
-.load-more {
-  display:block;
-  text-align: center;
-  margin-top: 70px;
-}
-
-.btn-loadmore {
-  border: 1px solid #f2f2f2;
-  color: #666666;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 125px;
-  text-transform: uppercase;
-}
-
-.btn-loadmore:hover {
-  color:#fff;
-}
-
-/*************************
 **********Contact CSS*****
 **************************/
 
@@ -857,7 +687,8 @@ section {
 }
 
 #google-map {
-  height: 350px;
+  height: 500px;
+  width: 100%
 }
 
 #contact-us {
@@ -965,19 +796,15 @@ ul.address {
 #footer .social-icons ul li a.facebook:hover {
   background-color: #3b5999;
 }
-#footer .social-icons ul li a.twitter:hover {
-  background-color: #2ac6f7;
-}
-#footer .social-icons ul li a.dribbble:hover {
-  background-color: #ff5b92;
-}
 #footer .social-icons ul li a.linkedin:hover {
   background-color: #036dc0;
 }
-#footer .social-icons ul li a.tumblr:hover {
-  background-color: #ff6b00;
+
+
+/*Media queries*/
+@media screen & (max-width: 1200px) {
+  #portfolio .folio-item:hover .overlay .folio-info p {
+    font-size: 12px;
+  }
 }
-
-/*Presets*/
-
 
